@@ -6,6 +6,7 @@ Currently, only Chrome browser is supported. Other browsers will be supported in
 - Python 3.x installed
 - Pip installed
 - Google Chrome browser installed
+- Allure installed
 
 ## Installation
 Install pytest
@@ -16,7 +17,7 @@ Install Selenium
 ```commandline
 pip install selenium
 ```
-Install Allure
+Install allure-pytest
 ```commandline
 pip install allure-pytest
 ```
