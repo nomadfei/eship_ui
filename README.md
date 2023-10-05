@@ -8,11 +8,11 @@ Currently, only Chrome browser is supported. Other browsers will be supported in
 - Google Chrome browser installed
 
 ## Installation
-Install pytest：
+Install pytest
 ```commandline
 pip install pytest
 ```
-Install Selenium：
+Install Selenium
 ```commandline
 pip install selenium
 ```
