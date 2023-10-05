@@ -56,7 +56,7 @@ class ShippingCalculate:
 
     def click_on_refine_search_button(self):
         """
-        Click the refine search button
+        Click the refine search button to expand Dimensions and Product Category fields
         """
         refine_search_element = WebDriverWait(self.driver, 10).until(
             expected_conditions.presence_of_element_located(
