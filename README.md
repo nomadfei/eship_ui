@@ -1,4 +1,4 @@
-# Project Name
+# UI Automation
 UI Automation for Easy Ship. 
 Currently, only Chrome browser is supported. Other browsers will be supported in the future.
 
