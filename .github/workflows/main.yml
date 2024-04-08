@@ -1,0 +1,27 @@
+name: Run Demo
+on:
+  workflow_dispatch:
+jobs:
+  staging:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: "Run script in staging"
+        run: |
+          echo "I am running a job in staging"
+
+  qa1:
+    runs-on: ubuntu-latest
+    environment: qa1
+
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: "Run script in qa1"
+        run: |
+          echo "I am running a job in qa1"
+
+      
+    
+    
