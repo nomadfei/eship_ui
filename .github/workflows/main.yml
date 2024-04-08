@@ -13,7 +13,7 @@ jobs:
           echo "I am running a job in staging"
           touch .env.staging
           echo "API_URL=${{ env.API_URL }}" > .env.staging
-          echo "API_URL=${{ secrets.APP_SECRET }}" > .env.staging
+          echo "APP_SECRET=${{ secrets.APP_SECRET }}" > .env.staging
           cat .env.staging
 
   qa1:
@@ -27,7 +27,7 @@ jobs:
           echo "I am running a job in qa1"
           touch .env.qa1
           echo "API_URL=${{ env.API_URL }}" > .env.qa1
-          echo "API_URL=${{ secrets.APP_SECRET }}" > .env.qa1
+          echo "APP_SECRET=${{ secrets.APP_SECRET }}" > .env.qa1
           cat .env.qa1
 
       
