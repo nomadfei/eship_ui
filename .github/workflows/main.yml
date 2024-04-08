@@ -11,6 +11,10 @@ jobs:
       - name: "Run script in staging"
         run: |
           echo "I am running a job in staging"
+          touch .env.staging
+          echo "API_URL=${{ env.API_URL }}" > .env.staging
+          echo "API_URL=${{ secret.APP_SECRET }}" > .env.staging
+          cat .env.staging
 
   qa1:
     runs-on: ubuntu-latest
@@ -21,6 +25,10 @@ jobs:
       - name: "Run script in qa1"
         run: |
           echo "I am running a job in qa1"
+          touch .env.qa1
+          echo "API_URL=${{ env.API_URL }}" > .env.qa1
+          echo "API_URL=${{ secret.APP_SECRET }}" > .env.qa1
+          cat .env.qa1
 
       
     
